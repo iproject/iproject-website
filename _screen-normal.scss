@@ -1,0 +1,123 @@
+/* Normal Screen Sizes*/
+@media only screen and (max-width: 1300px) {
+  #home {
+    &-header {
+      height: 80px;
+
+      .wrapper {
+        width: 90%;
+        margin: auto;
+      }
+
+      .branding {
+        padding: 0;
+      }
+
+      nav {
+        .top-section {
+          display: none;
+        }
+
+        .bottom-section {
+          height: 100%;
+          align-items: center;
+          justify-content: flex-end;
+          padding: 0;
+
+          .main-menu {
+            display: none;
+          }
+
+          .menu-wrap {
+            display: block;
+          }
+
+          .btn-blog {
+            display: none !important;
+          }
+        }
+      }
+    }
+
+    &-showcase {
+      height: calc(100vh - 160px);
+
+      .buttons {
+        .contact {
+          display: none;
+        }
+      }
+    }
+
+    &-offer {
+      .items {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .item {
+        h3 {
+          text-align: center;
+        }
+      }
+    }
+
+    &-services {
+      & > .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+    }
+
+    &-about {
+      .buttons {
+        button {
+          width: fit-content !important;
+          padding: 0.5rem 1.43rem !important;
+        }
+      }
+
+      .panels {
+        margin-top: 0.5rem;
+      }
+    }
+
+    &-contact {
+      form {
+        .content {
+          &-r {
+            h3 {
+              text-align: center;
+              line-height: 1.5;
+              color: $white !important;
+            }
+          }
+        }
+      }
+    }
+
+    &-main-footer {
+      .slogan {
+        font-size: 3.4rem !important;
+        padding: 3rem !important;
+      }
+
+      .navigation {
+        padding: 1rem !important;
+        margin-right: 1rem;
+      }
+
+      .nav {
+        justify-content: flex-end !important;
+      }
+    }
+  }
+
+  .video-player {
+    .video-wrapper {
+      max-width: 1000px;
+      width: 1000px;
+    }
+  }
+}
