@@ -1817,40 +1817,127 @@ ul {
   padding-bottom: 3rem;
 }
 
-#home-blog .posts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 4rem;
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials-area {
+  /* background: rgba(131, 97, 97, 0) url("assets/img/maclaptop.jpg") no-repeat fixed center top/cover; */
+  height: auto;
+  width: 100%;
 }
 
-#home-blog .posts .post-title {
-  font-size: 0.8rem;
+.testi-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.testi-overly {
+  /* background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0; */
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.quate {
+  border: 1px dotted #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  height: 70px;
+  line-height: 70px;
+  width: 70px;
+}
+
+.quate:hover {
+  color: #fff;
+}
+
+.testi-img img {
+  border: 1px dotted rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 5px;
+  transition: background 0.6s ease-out 0s;
+  width: 80px !important;
+}
+
+.testi-text p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.testi-text h6 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot > span {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+  bottom: -30px;
+  display: block;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+}
+
+.testimonial-content {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+  display: inline-block;
+  margin: 0 3px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+  background: #3EC1D5;
+}
+
+.testimonial-carousel .owl-nav,
+.testimonial-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.testimonial-carousel .owl-dot.active {
+  background-color: #3ec1d5 !important;
+}
+
+.testi-text.text-center > h6 {
+  color: #fff;
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fb841b;
-  padding: 1rem 0;
 }
 
-#home-blog .posts .post-body {
-  letter-spacing: 2px;
-  font-weight: 300;
-  font-size: 0.9rem;
-}
-
-#home-blog .posts .post .more-post-btn {
-  color: #909090;
-  border-bottom: dotted 1px #5c5c5c;
-  padding-bottom: 0;
-  margin-left: 0.5rem;
-}
-
-#home-blog .posts .post .more-post-btn:hover {
-  color: #fdc9ad;
-  text-decoration: none;
-}
 
 #home-contact {
   background: #373737;
@@ -2496,14 +2583,14 @@ ul {
     margin: auto;
   }
   #home-showcase .l-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 0;
-    width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+justify-content: center;
+padding: 0;
+width: 100%;
   }
   #home-showcase .l-content h1 {
     font-size: 2.5rem;

@@ -115,6 +115,7 @@ function toggleAboutTab(e) {
   });
 }
 
+
 //  Services Swiper
 var swiper = new Swiper("#home-services .swiper-container", {
   spaceBetween: 30,
@@ -189,6 +190,8 @@ $(
   }
 });
 
+
+
 // Advice user on landscape orientation
 function orientationAdvisor() {
   if (window.innerWidth > window.innerHeight) {
@@ -205,3 +208,20 @@ function orientationAdvisor() {
     }
   }
 }
+
+$(".testimonial-carousel").owlCarousel({
+  autoplay: true,
+  dots: true,
+  loop: true,
+  responsive: {
+    0: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    900: {
+      items: 1
+    }
+  }
+});
