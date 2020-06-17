@@ -1909,7 +1909,7 @@ ul {
 }
 
 .testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
-  background: #3EC1D5;
+  background: #f16d38;
 }
 
 .testimonial-carousel .owl-nav,
@@ -1928,7 +1928,7 @@ ul {
 }
 
 .testimonial-carousel .owl-dot.active {
-  background-color: #3ec1d5 !important;
+  background-color: #f16d38 !important;
 }
 
 .testi-text.text-center > h6 {
