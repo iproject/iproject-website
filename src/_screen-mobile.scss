@@ -112,9 +112,6 @@
       }
     }
 
-    &-services {
-    }
-
     &-about {
       .section-title {
         padding-bottom: 1rem;
@@ -454,36 +451,6 @@
               grid-column: 1 / span 2;
             }
           }
-        }
-      }
-    }
-
-    &-blog {
-      padding-bottom: 2rem;
-      .section-title {
-        padding-bottom: 1rem;
-        .wrapper {
-          margin-bottom: 1rem;
-        }
-      }
-
-      .container {
-        padding: 0rem;
-        width: 100%;
-      }
-
-      .posts {
-        grid-gap: 1rem;
-      }
-
-      .post {
-        padding: 1rem;
-        grid-gap: 1rem;
-        &-img {
-          border-radius: 5px;
-          overflow: hidden;
-        }
-        &-title {
         }
       }
     }

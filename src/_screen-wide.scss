@@ -968,48 +968,8 @@
     }
   }
 
-  &-blog {
-    padding-bottom: 7rem;
-
-    .section-title {
-      padding-top: 5rem;
-      padding-bottom: 3rem;
-    }
-
-    .posts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-gap: 4rem;
-
-      .post {
-        &-title {
-          font-size: 0.8rem;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          color: $primary;
-          padding: 1rem 0;
-        }
-
-        &-body {
-          letter-spacing: 2px;
-          font-weight: 300;
-          font-size: 0.9rem;
-        }
-
-        .more-post-btn {
-          color: lighten($color: $dark, $amount: 40);
-          border-bottom: dotted 1px $dark-light;
-          padding-bottom: 0;
-          margin-left: 0.5rem;
-
-          &:hover {
-            color: $primary-light;
-            text-decoration: none;
-          }
-        }
-      }
-    }
+  &-testimonials {
+    padding: 6rem 0;
   }
 
   &-contact {
