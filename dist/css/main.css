@@ -1343,7 +1343,7 @@ ul {
   background: url("../assets/img/services-img.jpg") no-repeat center center/cover;
 }
 
-#home-services > .wrapper .r-content .swiper-container {
+#home-services > .wrapper .r-content .swiper {
   background: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1545,7 +1545,7 @@ ul {
   overflow: hidden;
 }
 
-#home-about .about-team .members .swiper-container {
+#home-about .about-team .members .swiper {
   width: 100%;
   height: 100%;
 }
